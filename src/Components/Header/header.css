@@ -3,7 +3,7 @@
 }
 
 .header__wrapper {
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -24,11 +24,8 @@
   list-style-type: none;
 }
 
-.header__wrapepr__nav__list__item {
-  padding: 10px;
-}
-
 .header__wrapepr__nav__list__item + .header__wrapepr__nav__list__item {
+  padding: 10px;
   margin-left: 20px;
 }
 

@@ -1,0 +1,18 @@
+.homebody__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.homebody_library {
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.homebody_link {
+  text-decoration: none;
+  color: black;
+  font-family: "Arial", serif;
+}
