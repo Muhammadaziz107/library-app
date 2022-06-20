@@ -1,0 +1,48 @@
+.header {
+  background-color: #212529;
+}
+
+.header__wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__wrapepr__nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header__login_box__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header__wrapepr__nav__list__item {
+  padding: 10px;
+}
+
+.header__wrapepr__nav__list__item + .header__wrapepr__nav__list__item {
+  margin-left: 20px;
+}
+
+.header__login_box__list_item {
+  padding: 10px;
+}
+
+.header__wrapepr__nav__list__item__link {
+  text-decoration: none;
+  color: white;
+  font-family: "Arial", serif;
+  font-size: 20px;
+}
+
+.header__wrapepr__nav__list__item__link:hover {
+  opacity: 0.7;
+}

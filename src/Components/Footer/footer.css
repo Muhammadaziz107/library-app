@@ -1,0 +1,11 @@
+.footer__wrapper {
+  color: white;
+  bottom: 0;
+  padding: 40px 0;
+  background-color: #212529;
+  font-size: 10px;
+}
+
+.footer__wrapper h1 {
+  text-align: center;
+}
