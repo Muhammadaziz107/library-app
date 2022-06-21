@@ -16,3 +16,31 @@
   color: black;
   font-family: "Arial", serif;
 }
+
+@media only screen and (max-width: 1300px) {
+  .homebody .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .homebody__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .homebody_library {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .homebody_library {
+    padding: 15px;
+  }
+
+  .img_library {
+    width: 250px;
+    height: 150px;
+  }
+}

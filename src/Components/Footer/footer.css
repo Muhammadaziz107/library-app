@@ -3,9 +3,18 @@
   bottom: 0;
   padding: 40px 0;
   background-color: #212529;
+  font-family: "Arial", serif;
+
   font-size: 10px;
 }
 
 .footer__wrapper h1 {
   text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .footer__wrapper h1 {
+    font-size: 15px;
+    font-family: "Arial", serif;
+  }
 }

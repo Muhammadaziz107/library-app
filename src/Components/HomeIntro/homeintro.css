@@ -2,4 +2,26 @@
   font-family: "Arial", serif;
   text-align: center;
   font-size: 50px;
+  margin-top: 120px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .intro__heading {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .homeintro .container {
+    padding: 0;
+  }
+  .intro__heading {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .intro__heading {
+    font-size: 40px;
+    margin-top: 100px;
+  }
 }

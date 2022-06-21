@@ -1,0 +1,7 @@
+.register-input {
+  margin: 10px 0;
+}
+
+.register-input:nth-child(2) {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,81 @@
+.login {
+  position: fixed;
+  background-color: #00ced1;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.incorrect-login {
+  display: none;
+  padding: 1px 10px;
+  font-family: "Arial", serif;
+  color: #4b453c;
+  margin-top: -10px;
+  background-color: #ffebcd;
+}
+
+.login_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 2px;
+  background-color: white;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.heading-login {
+  font-family: "Arial", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label__input {
+  width: 96%;
+  margin: 20px 0;
+  padding: 15px 5px;
+  outline: none;
+  border: 1px solid #cfcecc;
+  font-family: "Arial", serif;
+  font-size: 15px;
+}
+
+.login-submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #fa8072;
+  border: 1px solid #fa8072;
+  font-family: "Arial", serif;
+  font-size: 17px;
+  color: white;
+}
+
+.create-accaunt {
+  font-family: "Arial", serif;
+  margin-top: 20px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+  .login_wrapper {
+    margin-top: 150px;
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .login_wrapper {
+    width: 270px;
+    margin-top: 30px;
+    padding: 30px 10px;
+  }
+}
