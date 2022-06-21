@@ -1,26 +1,61 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useNavigate } from "react-router";
 import "./register.css";
 import { NavLink } from "react-router-dom";
 
 function Register() {
+  const elForm = useRef(null);
+  const elPassword = useRef(null);
+  const elName = useRef(null);
+  const elBtn = useRef(null);
+
+  let navigate = useNavigate();
+
+  const handleRegister = async evt => {
+    try {
+      evt.preventDefault();
+      const res = await fetch(`https://coursesnodejs.herokuapp.com/user/sign-up`, {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({
+          fullName: elName.current.value.trim(),
+          password: elPassword.current.value.trim(),
+        }),
+      });
+
+      if (res.status === 200) {
+        navigate("/");
+      } else {
+        alert("Something went wrong!!!");
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div className="login">
       <div className="login_wrapper">
         <p className="heading-login">Sign up</p>
 
-        <form className="login-form" method="post">
+        <form className="login-form" method="post" ref={elForm} onSubmit={handleRegister}>
           <input
             className="label__input register-input"
             type="text"
             placeholder="Full Name"
+            ref={elName}
           />
           <input
             className="label__input register-input"
             type="password"
             placeholder="Password"
+            ref={elPassword}
           />
 
-          <button className="login-submit-btn" type="submit">
+          <button ref={elBtn} className="login-submit-btn" type="submit">
             Sign Up
           </button>
         </form>
