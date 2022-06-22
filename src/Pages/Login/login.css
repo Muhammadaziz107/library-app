@@ -79,3 +79,7 @@
     padding: 30px 10px;
   }
 }
+
+.alert--active {
+  display: block;
+}
