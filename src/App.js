@@ -7,7 +7,6 @@ import Library from "./Pages/Library/library";
 import Profile from "./Pages/Profile/profile";
 import { useEffect } from "react";
 import Courses from "./Pages/Courses/courses";
-import Onecourse from "./Pages/OneCourse/one";
 
 function App() {
   let navigate = useNavigate();
@@ -31,7 +30,6 @@ function App() {
         <Route path="/library" element={<Library />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/courses/:id" element={<Onecourse />} />
       </Routes>
     </>
   );

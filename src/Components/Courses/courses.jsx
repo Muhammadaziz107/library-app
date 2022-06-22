@@ -38,7 +38,7 @@ function Coursesbody() {
           {data &&
             data.map(e => (
               <div className="homebody_library branch--wrapper" key={e._id}>
-                <NavLink className="homebody_link" to="/" key={e._id}>
+                <NavLink className="homebody_link" to="/courses/:id" key={e._id}>
                   <img
                     className="img_library"
                     src={courses}
@@ -48,6 +48,7 @@ function Coursesbody() {
                   />
                   <h3>{e.name}</h3>
                   <p>{e.description}</p>
+                  <p>{e._id}</p>
                 </NavLink>
               </div>
             ))}
