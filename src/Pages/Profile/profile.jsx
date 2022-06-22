@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../Components/Footer/footer";
 import Header from "../../Components/Header/header";
 import Homeintro from "../../Components/HomeIntro/homeintro";
+import Profileinfo from "../../Components/ProfileInfo/info";
 import "./profile.css";
 
 function Profile() {
@@ -11,6 +12,7 @@ function Profile() {
 
       <div className="content">
         <Homeintro />
+        <Profileinfo />
       </div>
 
       <div className="footer-box">

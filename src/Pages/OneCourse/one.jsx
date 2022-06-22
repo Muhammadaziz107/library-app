@@ -1,9 +1,9 @@
-import React from "react";
 import Coursesbody from "../../Components/Courses/courses";
 import Footer from "../../Components/Footer/footer";
 import Header from "../../Components/Header/header";
+import "./one.css";
 
-function Courses() {
+function Onecourse() {
   return (
     <div>
       <Header />
@@ -18,4 +18,4 @@ function Courses() {
     </div>
   );
 }
-export default Courses;
+export default Onecourse;

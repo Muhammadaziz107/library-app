@@ -1,16 +1,16 @@
-import React, { useEffect, useRef, useState } from "react";
-import "./library.css";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import "./courses.css";
 import courses from "../../Assets/Images/courses.png";
+import { NavLink } from "react-router-dom";
 
-function LibraryBranch() {
+function Coursesbody() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          "https://coursesnodejs.herokuapp.com/user/book?page=1&limit=5",
+          "https://coursesnodejs.herokuapp.com/user/course?limit=5&page=1",
           {
             headers: {
               Accept: "application/json",
@@ -32,7 +32,7 @@ function LibraryBranch() {
     fetchData();
   });
   return (
-    <div className="branches">
+    <div className="homebody">
       <div className="container">
         <div className="homebody__wrapper library-branches">
           {data &&
@@ -47,7 +47,7 @@ function LibraryBranch() {
                     height="200"
                   />
                   <h3>{e.name}</h3>
-                  <p>Lorem ipsum dolor sit amet...</p>
+                  <p>{e.description}</p>
                 </NavLink>
               </div>
             ))}
@@ -57,4 +57,4 @@ function LibraryBranch() {
   );
 }
 
-export default LibraryBranch;
+export default Coursesbody;

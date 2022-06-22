@@ -41,7 +41,10 @@ function Header() {
                   </NavLink>
                 </li>
                 <li className="header__wrapepr__nav__list__item">
-                  <NavLink className="header__wrapepr__nav__list__item__link" to="/">
+                  <NavLink
+                    className="header__wrapepr__nav__list__item__link"
+                    to="/courses"
+                  >
                     Courses
                   </NavLink>
                 </li>

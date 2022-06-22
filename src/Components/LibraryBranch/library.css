@@ -5,3 +5,12 @@
 .branches .container {
   padding: 0;
 }
+
+.library-branches {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.branch--wrapper {
+  margin: 20px auto;
+}

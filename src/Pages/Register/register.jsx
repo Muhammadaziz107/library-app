@@ -28,6 +28,10 @@ function Register() {
 
       if (res.status === 200) {
         navigate("/");
+        const token =
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmFhMGNiYTAxNzM2ZGVlNWZkYjNjMzYiLCJpYXQiOjE2NTUzMTI3ODksImV4cCI6MTY1NTkxNzU4OX0.Ll33OKvq26TWZqPS7pe1wTKtND1EHXlaWof7DZyr7Hw";
+
+        window.localStorage.setItem("token", JSON.stringify(token));
       } else {
         alert("Something went wrong!!!");
       }

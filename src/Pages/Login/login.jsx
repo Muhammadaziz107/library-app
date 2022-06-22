@@ -1,10 +1,14 @@
 import React, { useRef } from "react";
 import "./login.css";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 function Login() {
   const elPassword = useRef(null);
   const elAlert = useRef(null);
+
+  let navigate = useNavigate();
+
   const handleLogin = async evt => {
     try {
       evt.preventDefault();
@@ -21,6 +25,7 @@ function Login() {
       });
 
       if (res.status === 200) {
+        navigate("/");
         const token =
           "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmFhMGNiYTAxNzM2ZGVlNWZkYjNjMzYiLCJpYXQiOjE2NTUzMTI3ODksImV4cCI6MTY1NTkxNzU4OX0.Ll33OKvq26TWZqPS7pe1wTKtND1EHXlaWof7DZyr7Hw";
 
